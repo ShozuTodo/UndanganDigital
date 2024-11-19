@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Penutup</title>
+    <style>
+        @keyframes slidefade {
+            from{opacity: 0;}
+            to{opacity: 1;}
+            from{transform: translateX(-100%);}
+            to{transform: translateX(0);}
+        }
+        body{
+            background-image: url(Android\ Small\ -\ 1.png);
+            background-size: cover;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            background-color: #4C4C4C;
+        }
+        
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0;
+            padding: 0;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            animation: slidefade 2s ease;
+        }
+
+        .pertama{
+            margin-top: 100px;
+            margin-bottom: 0;
+        }
+
+        .kedua{
+            margin-top: 0;
+            padding: 0;
+        }
+
+        .ketiga{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;
+        }
+
+        .turut{
+            margin-top: 50px;
+        }
+
+        .tombol{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tombol button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+        border-radius: 20px;
+        gap: 10vh;
+        font-size: 20px;
+        margin-bottom: 100px;
+       }
+
+       .tombol button:hover{
+        background-color: white;
+        color: black;
+        transition: 1s ease;
+       }
+
+       @media (min-width: 500px) {
+        button{
+            font-size: 100px;
+        }
+
+        .tombol2{
+            margin-top: 70vh;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pertama{
+            font-size: 60px;
+            margin-top: 60vh;
+            width: 120vh;
+            margin-bottom: 50px;
+        }
+
+        .kedua{
+            font-size: 60px;
+            width: 120vh;
+            margin-bottom: 25px;
+        }
+
+        .ketiga{
+            font-size: 60px;
+        }
+
+        .bpk{
+            width: 500px;
+        }
+
+        .turut{
+            font-size: 60px;
+            margin-top: 100px;
+            width: 200vh;
+        }
+
+        .tombol{
+            margin-top: 10vh;
+        }
+
+        .tombol button{
+            font-size: 100px;
+        }
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="pertama">
+        <p>Kami mengucapkan terima kasih sudah berhadir di acara anak kami</p>
+    </div>
+    <div class="kedua">
+        <p class="kami">Kami yang berbahagia, keluarga besar kedua pengantin</p>
+    </div>
+    <div class="ketiga">
+        <div class="Ibnu">
+        <p>Keluarga besar</p>
+        <p class="nama">Khalid Ibnu Irwan</p>
+        <p class="bpk">Bpk lorem dan ibu ipsum</p>
+        </div>
+        <div class="natahsa">
+            <p>Keluarga besar</p>
+            <p class="nama">Natasha Nabila</p>
+            <p class="bpk">Bpk lorem dan ibu ipsum</p>
+        </div>
+    </div>
+    <div class="turut">
+        <p>Turut mengundang</p>
+        <p>Keluarga besar bpk lorem & ibu ipsum
+            keluarga besar bpk lorem & ibu ipsum
+            dan seluruh keluarga lainnya</p>
+    </div>
+    <div class="tombol">
+        <div class="tombol2">
+            <a href="rsvp.html"><button>Back</button></a>
+        </div>
+   </div>
+</body>
+</html>

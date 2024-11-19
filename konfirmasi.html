@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi RSVP</title>
+    <style>
+        @keyframes slidefade {
+            from{opacity: 0;}
+            to{opacity: 1;}
+            from{transform: translateX(-100%);}
+            to{transform: translateX(0);}
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-image: url(Android\ Small\ -\ 3.png);
+            background-color: #4C4C4C;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: slidefade 1s ease;
+            margin-top: 100px;
+            background: linear-gradient(to right, white, grey);
+        }
+        h2 {
+            text-align: center;
+        }
+
+        button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+        border-radius: 20px;
+        display: grid;
+        align-items: center;
+        font-size: 20px;
+       }
+
+       .tombol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .tombol button:hover{
+        background-color: white;
+        color: black;
+        transition: 1s ease;
+       }
+
+       .tombol{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 500px){
+        .container{
+            width: 1000px;
+            font-size: 35px;
+            margin-top: 600px;
+            background: linear-gradient(to right, white, grey);
+        }
+
+        .tombol button{
+            font-size: 100px;
+        }
+
+        .tombol{
+            margin-top: 100px;
+            margin-bottom: 180vh;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tengkyu masbro atas Kehadiran nya!</h2>
+        <p><strong>Nama Anda:</strong> <span id="confirmName"></span></p>
+        <p><strong>No HP:</strong> <span id="confirmPhone"></span></p>
+        <p><strong>Kehadiran:</strong> <span id="confirmAttendance"></span></p>
+        <p><strong>Ucapan:</strong></p>
+        <p id="confirmMessage"></p>
+    </div>
+
+    <div class="tombol">
+        <div class="tombol2">
+            <a href="rsvp.html"><button>Back</button></a>
+        </div>
+    </div>
+
+    <script>
+        // Mengambil data dari query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const phone = urlParams.get('phone');
+        const attendance = urlParams.get('attendance');
+        const message = urlParams.get('message');
+        
+        // Menampilkan data di halaman
+        document.getElementById('confirmName').textContent = name;
+        document.getElementById('confirmPhone').textContent = phone;
+        document.getElementById('confirmAttendance').textContent = attendance;
+        document.getElementById('confirmMessage').textContent = message;
+    </script>
+
+</body>
+</html>
